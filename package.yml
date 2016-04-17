@@ -1,0 +1,18 @@
+name        : xextproto
+version     : 7.3.0
+release     : 5
+source      :
+    - http://xorg.freedesktop.org/releases/individual/proto/xextproto-7.3.0.tar.gz : 1b1bcdf91221e78c6c33738667a57bd9aaa63d5953174ad8ed9929296741c9f5
+license     :
+    - MIT
+summary     : X Protocol Extensions
+component   : xorg.proto
+patterns    : /
+description : |
+    Various other X Protocol Extensions.
+setup      : |
+    %configure
+build      : |
+    %make
+install    : |
+    %make_install
